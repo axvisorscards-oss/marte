@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#2b2528" rx="10"/>
+  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
+        font-family="'Nunito Sans', -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="28" font-weight="800" letter-spacing="-1.5" fill="#FFFFFF">a<tspan fill="#a9be5a" dx="-1" dy="0">x</tspan>v</text>
+</svg>
