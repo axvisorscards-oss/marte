@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#2b2528" />
+
+  <title>Marte Gómez — Business Development | Axvisors</title>
+  <meta name="description" content="Contacta directamente a Marte Gómez, Business Development en Axvisors Real Estate Services." />
+  <meta name="author" content="Marte Gómez" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Marte Gómez — Axvisors" />
+  <meta property="og:description" content="Business Development · Axvisors Real Estate Services" />
+  <meta property="og:url" content="https://axvisorscards-oss.github.io/marte/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800;900&family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===================================================================
+       AXVISORS · Tarjeta Digital v3.0 (entregable final)
+       =================================================================== */
+    :root {
+      --axv-green:       #a9be5a;
+      --axv-green-soft:  #bdcf7e;
+      --axv-black:       #2b2528;
+      --axv-gray:        #575756;
+      --axv-white:       #ffffff;
+      --bg:              var(--axv-black);
+      --surface:         #37312f;
+      --surface-2:       #423b39;
+      --text:            var(--axv-white);
+      --text-dim:        rgba(255,255,255,0.75);
+      --text-mute:       rgba(255,255,255,0.50);
+      --text-mute-2:     rgba(255,255,255,0.28);
+      --line:            rgba(255,255,255,0.08);
+      --font-display:    'Unbounded', 'Nunito Sans', -apple-system, sans-serif;
+      --font-sans:       'Nunito Sans', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --r-md:            14px;
+      --r-lg:            22px;
+      --r-pill:          999px;
+      --ease:            cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      font-weight: 400;
+      line-height: 1.55;
+      letter-spacing: -0.003em;
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body::before {
+      content: "";
+      position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      opacity: 0.22; mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.13 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: -25%; right: -15%;
+      width: 70vw; height: 70vw;
+      max-width: 900px; max-height: 900px;
+      background: radial-gradient(circle, rgba(169,190,90,0.10) 0%, rgba(169,190,90,0) 60%);
+      pointer-events: none; z-index: 0;
+    }
+
+    .page {
+      position: relative; z-index: 2;
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+    }
+    @media (min-width: 640px) { .page { padding: 40px 32px 100px; } }
+
+    /* ---- HEADER ---- */
+    .header {
+      display: flex; justify-content: center; align-items: center;
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeDown 0.9s var(--ease) 0.1s forwards;
+    }
+    .header-logo { display: block; height: 36px; width: auto; user-select: none; -webkit-user-drag: none; }
+    @media (min-width: 640px) {
+      .header { margin-bottom: 56px; }
+      .header-logo { height: 42px; }
+    }
+
+    /* ---- HERO ---- */
+    .hero { margin-bottom: 56px; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-size: 10.5px; font-weight: 700; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--axv-green);
+      margin-bottom: 20px;
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.3s forwards;
+    }
+    .eyebrow::before {
+      content: ""; display: block;
+      width: 4px; height: 18px;
+      background: var(--axv-green);
+      transform: skewX(-20deg); flex-shrink: 0;
+    }
+
+    .name {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 10vw, 56px);
+      line-height: 1.02; letter-spacing: -0.035em;
+      font-weight: 500; color: var(--text);
+      margin-bottom: 14px;
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.4s forwards;
+    }
+
+    .role {
+      font-size: 14.5px; font-weight: 700;
+      line-height: 1.5; color: var(--axv-green);
+      letter-spacing: 0.04em; text-transform: uppercase;
+      margin-bottom: 14px;
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.5s forwards;
+    }
+
+    .tagline {
+      font-size: 15.5px; line-height: 1.62;
+      color: var(--text-dim); max-width: 32ch;
+      margin-bottom: 36px;
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.6s forwards;
+    }
+
+    .cta-primary {
+      position: relative;
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      width: 100%; padding: 20px 28px;
+      background: var(--axv-green); color: var(--axv-black);
+      font-family: var(--font-sans);
+      font-size: 15.5px; font-weight: 700; letter-spacing: 0.01em;
+      border: none; border-radius: var(--r-md); cursor: pointer;
+      text-decoration: none; overflow: hidden;
+      transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.7s forwards;
+      box-shadow: 0 4px 20px -6px rgba(169,190,90,0.45);
+    }
+    .cta-primary::before {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(130deg, var(--axv-green-soft) 0%, var(--axv-green) 100%);
+      opacity: 0; transition: opacity 0.35s var(--ease);
+    }
+    .cta-primary > * { position: relative; z-index: 1; }
+    .cta-primary:hover, .cta-primary:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px -10px rgba(169,190,90,0.55);
+    }
+    .cta-primary:hover::before, .cta-primary:focus-visible::before { opacity: 1; }
+    .cta-primary:active { transform: translateY(0); }
+    .cta-primary svg { width: 20px; height: 20px; }
+
+    .actions {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+      margin-top: 12px;
+      opacity: 0; animation: fadeUp 0.9s var(--ease) 0.8s forwards;
+    }
+
+    .action {
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+      padding: 18px 8px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+      color: var(--text); text-decoration: none;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.015em;
+      transition: all 0.3s var(--ease);
+      cursor: pointer; -webkit-user-select: none; user-select: none;
+    }
+    .action:hover, .action:focus-visible {
+      background: var(--surface-2);
+      border-color: rgba(169,190,90,0.4);
+      transform: translateY(-2px);
+    }
+    .action:active { transform: translateY(0); }
+    .action svg { width: 22px; height: 22px; color: var(--axv-green); }
+
+    /* ---- SECCIÓN ---- */
+    .section {
+      margin-top: 56px;
+      opacity: 0; animation: fadeUp 1s var(--ease) 0.9s forwards;
+    }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-size: 10.5px; font-weight: 700; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--text-mute);
+      margin-bottom: 20px;
+    }
+    .section-label::before {
+      content: ""; display: block;
+      width: 4px; height: 18px;
+      background: var(--axv-green);
+      transform: skewX(-20deg); flex-shrink: 0;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 28px; line-height: 1.14; letter-spacing: -0.028em;
+      font-weight: 500; color: var(--text);
+      margin-bottom: 18px;
+    }
+    .section-title em { font-style: normal; color: var(--axv-green); font-weight: 500; }
+
+    .bio {
+      font-size: 15.5px; line-height: 1.68;
+      color: var(--text-dim); max-width: 54ch;
+    }
+
+    .specialties { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+    .specialty {
+      padding: 9px 15px;
+      background: rgba(169,190,90,0.08);
+      border: 1px solid rgba(169,190,90,0.22);
+      border-radius: var(--r-pill);
+      font-size: 12.5px; font-weight: 600;
+      color: var(--axv-green-soft); letter-spacing: 0.01em;
+    }
+
+    /* ---- LINK CARDS ---- */
+    .link-list { display: flex; flex-direction: column; gap: 10px; }
+    .link-card {
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 18px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+      color: var(--text); text-decoration: none;
+      transition: all 0.3s var(--ease);
+      position: relative; overflow: hidden;
+    }
+    .link-card::after {
+      content: ""; position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px; background: var(--axv-green);
+      transform: scaleY(0); transform-origin: center;
+      transition: transform 0.35s var(--ease);
+    }
+    .link-card:hover, .link-card:focus-visible {
+      background: var(--surface-2);
+      border-color: rgba(169,190,90,0.3);
+      transform: translateX(3px);
+    }
+    .link-card:hover::after, .link-card:focus-visible::after { transform: scaleY(1); }
+
+    .link-card-icon {
+      flex-shrink: 0; width: 42px; height: 42px;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(169,190,90,0.10);
+      border-radius: 11px;
+      border: 1px solid rgba(169,190,90,0.18);
+    }
+    .link-card-icon svg { width: 19px; height: 19px; color: var(--axv-green); }
+    .link-card-body { flex: 1; min-width: 0; }
+    .link-card-label {
+      font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--text-mute);
+      margin-bottom: 4px;
+    }
+    .link-card-value {
+      font-size: 14.5px; font-weight: 600; color: var(--text);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .link-card-arrow { flex-shrink: 0; color: var(--text-mute); transition: all 0.3s var(--ease); }
+    .link-card:hover .link-card-arrow { color: var(--axv-green); transform: translate(3px, -3px); }
+
+    /* ---- RESOURCE CARD (Drive) ---- */
+    .resource-card {
+      display: flex; align-items: center; gap: 16px;
+      padding: 22px 20px;
+      background: linear-gradient(135deg, rgba(169,190,90,0.12) 0%, rgba(169,190,90,0.04) 100%);
+      border: 1px solid rgba(169,190,90,0.30);
+      border-radius: var(--r-md);
+      color: var(--text); text-decoration: none;
+      transition: all 0.3s var(--ease);
+      position: relative; overflow: hidden;
+    }
+    .resource-card::before {
+      content: ""; position: absolute;
+      top: -50%; right: -20%;
+      width: 60%; height: 200%;
+      background: radial-gradient(circle, rgba(169,190,90,0.20) 0%, transparent 70%);
+      opacity: 0; transition: opacity 0.4s var(--ease);
+      pointer-events: none;
+    }
+    .resource-card:hover, .resource-card:focus-visible {
+      border-color: var(--axv-green);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px -12px rgba(169,190,90,0.35);
+    }
+    .resource-card:hover::before, .resource-card:focus-visible::before { opacity: 1; }
+    .resource-card > * { position: relative; z-index: 1; }
+
+    .resource-card-icon {
+      flex-shrink: 0; width: 46px; height: 46px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--axv-green); color: var(--axv-black);
+      border-radius: 12px;
+    }
+    .resource-card-icon svg { width: 22px; height: 22px; }
+    .resource-card-body { flex: 1; min-width: 0; }
+    .resource-card-label {
+      font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--axv-green); margin-bottom: 4px;
+    }
+    .resource-card-value { font-size: 15.5px; font-weight: 700; color: var(--text); }
+    .resource-card-desc { font-size: 13px; color: var(--text-dim); margin-top: 3px; font-weight: 500; }
+
+    /* ---- SOCIALS ---- */
+    .socials { display: flex; flex-wrap: wrap; gap: 8px; }
+    .social {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 11px 16px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--r-pill);
+      color: var(--text); text-decoration: none;
+      font-size: 13px; font-weight: 600;
+      transition: all 0.3s var(--ease);
+    }
+    .social:hover, .social:focus-visible {
+      background: var(--surface-2);
+      border-color: rgba(169,190,90,0.40);
+      color: var(--axv-green);
+      transform: translateY(-1px);
+    }
+    .social svg { width: 15px; height: 15px; }
+
+    /* ---- LOCATION ---- */
+    .location-card {
+      padding: 22px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+    }
+    .location-office {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 10.5px; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--axv-green); margin-bottom: 12px;
+    }
+    .location-office::before {
+      content: ""; width: 6px; height: 6px;
+      background: var(--axv-green); border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(169,190,90,0.18);
+    }
+    .location-address { font-size: 15px; line-height: 1.55; color: var(--text-dim); margin-bottom: 18px; }
+    .location-address strong { color: var(--text); font-weight: 700; display: block; margin-bottom: 4px; }
+
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 18px;
+      background: transparent;
+      border: 1px solid var(--line);
+      border-radius: var(--r-pill);
+      color: var(--text); text-decoration: none;
+      font-size: 13px; font-weight: 600;
+      transition: all 0.3s var(--ease); cursor: pointer;
+    }
+    .btn-outline:hover, .btn-outline:focus-visible {
+      border-color: var(--axv-green); color: var(--axv-green);
+      background: rgba(169,190,90,0.06);
+    }
+    .btn-outline svg { width: 14px; height: 14px; }
+
+    /* ---- SHARE ---- */
+    .share-section {
+      margin-top: 72px; padding: 36px 24px 40px;
+      text-align: center;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .share-section h3 {
+      font-family: var(--font-display);
+      font-size: 24px; line-height: 1.14; letter-spacing: -0.025em;
+      font-weight: 500; color: var(--text); margin-bottom: 20px;
+    }
+    .share-section h3 em { font-style: normal; color: var(--axv-green); font-weight: 500; }
+    .share-btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 14px 26px;
+      background: transparent;
+      border: 1.5px solid var(--axv-green);
+      color: var(--axv-green);
+      border-radius: var(--r-pill);
+      cursor: pointer; font-family: var(--font-sans);
+      font-size: 14px; font-weight: 700; letter-spacing: 0.01em;
+      transition: all 0.3s var(--ease);
+    }
+    .share-btn:hover {
+      background: var(--axv-green); color: var(--axv-black);
+      transform: translateY(-1px);
+    }
+    .share-btn:active { transform: translateY(0); }
+    .share-btn svg { width: 16px; height: 16px; }
+
+    /* ---- FOOTER ---- */
+    .footer {
+      margin-top: 40px;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; gap: 14px;
+    }
+    .footer-logo { height: 28px; width: auto; opacity: 0.95; }
+    .footer-web {
+      font-size: 12px; font-weight: 600; color: var(--text-mute);
+      letter-spacing: 0.14em; text-transform: uppercase;
+      text-decoration: none; transition: color 0.25s var(--ease);
+    }
+    .footer-web:hover { color: var(--axv-green); }
+    .footer-meta { font-size: 11px; color: var(--text-mute-2); letter-spacing: 0.03em; }
+
+    /* ---- TOAST ---- */
+    .toast {
+      position: fixed; left: 50%; bottom: 28px;
+      transform: translateX(-50%) translateY(120%);
+      background: var(--axv-green); color: var(--axv-black);
+      padding: 14px 22px; border-radius: var(--r-pill);
+      font-size: 13.5px; font-weight: 700;
+      box-shadow: 0 20px 50px -10px rgba(0,0,0,0.6);
+      transition: transform 0.45s var(--ease);
+      z-index: 1000; pointer-events: none;
+      letter-spacing: 0.01em;
+    }
+    .toast.visible { transform: translateX(-50%) translateY(0); }
+
+    /* ---- ANIMACIONES ---- */
+    @keyframes fadeDown { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeUp   { from { opacity: 0; transform: translateY(16px); }  to { opacity: 1; transform: translateY(0); } }
+
+    :focus-visible { outline: 2px solid var(--axv-green); outline-offset: 3px; border-radius: 4px; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+    @media print {
+      body::before, body::after { display: none; }
+      body { background: white; color: black; }
+      .cta-primary, .actions, .share-section, .link-card-arrow { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <header class="header">
+      <a href="https://www.axvisors.com" target="_blank" rel="noopener" aria-label="Axvisors · Real Estate Services">
+        <img src="assets/axvisors-logo-white.png" alt="Axvisors · Real Estate Services" class="header-logo" />
+      </a>
+    </header>
+
+    <section class="hero" aria-label="Presentación personal">
+      <p class="eyebrow">Tarjeta Ejecutiva</p>
+      <h1 class="name">Marte<br>Gómez</h1>
+      <p class="role">Business Development</p>
+      <p class="tagline">Conecto a nuevos clientes con Axvisors y cultivo relaciones de largo plazo con organizaciones en crecimiento.</p>
+
+      <button class="cta-primary" id="saveContactBtn" aria-label="Guardar contacto en mi teléfono">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <line x1="19" y1="8" x2="19" y2="14"/>
+          <line x1="22" y1="11" x2="16" y2="11"/>
+        </svg>
+        <span>Guardar mi contacto</span>
+      </button>
+
+      <div class="actions" role="group" aria-label="Acciones rápidas">
+        <a class="action" href="tel:+525540916347" aria-label="Llamar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Llamar
+        </a>
+        <a class="action" href="https://wa.me/525540916347?text=Hola%20Marte%2C%20te%20contacto%20desde%20tu%20tarjeta%20digital%20Axvisors." target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+        <a class="action" href="mailto:marte.gomez@axvisors.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sec-about">
+      <p class="section-label">Acerca</p>
+      <h2 class="section-title" id="sec-about">Un breve <em>perfil</em>.</h2>
+      <p class="bio">Mi rol es entender a fondo los retos inmobiliarios de cada organización y articular, junto con el equipo de asesoría, soluciones que acompañen su crecimiento. Cuido las relaciones institucionales y conecto a nuevas cuentas con la plataforma integral de servicios de Axvisors.</p>
+      <div class="specialties" role="list" aria-label="Áreas de especialidad">
+        <span class="specialty" role="listitem">Desarrollo de negocio</span>
+        <span class="specialty" role="listitem">Nuevas cuentas</span>
+        <span class="specialty" role="listitem">Asesoría comercial</span>
+        <span class="specialty" role="listitem">Relaciones institucionales</span>
+      </div>
+    </section>
+
+    <section class="section" id="sec-resources-wrap" aria-labelledby="sec-resources">
+      <p class="section-label">Material</p>
+      <h2 class="section-title" id="sec-resources">Información y <em>recursos</em>.</h2>
+      <a class="resource-card" href="https://drive.google.com/drive/folders/CAMBIAR_ESTE_ENLACE" target="_blank" rel="noopener">
+        <span class="resource-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+        </span>
+        <div class="resource-card-body">
+          <div class="resource-card-label">Abrir drive</div>
+          <div class="resource-card-value">Portafolio y documentos</div>
+          <div class="resource-card-desc">Servicios, casos de éxito y material exclusivo.</div>
+        </div>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--axv-green); flex-shrink:0;" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+    </section>
+
+    <section class="section" aria-labelledby="sec-contact">
+      <p class="section-label">Contacto</p>
+      <h2 class="section-title" id="sec-contact">Cómo <em>encontrarme</em>.</h2>
+      <div class="link-list">
+        <a class="link-card" href="tel:+525540916347" aria-label="Llamar">
+          <span class="link-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div class="link-card-body">
+            <div class="link-card-label">Teléfono</div>
+            <div class="link-card-value">+52 55 4091 6347</div>
+          </div>
+          <svg class="link-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+        <a class="link-card" href="mailto:marte.gomez@axvisors.com" aria-label="Email">
+          <span class="link-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+          <div class="link-card-body">
+            <div class="link-card-label">Correo</div>
+            <div class="link-card-value">marte.gomez@axvisors.com</div>
+          </div>
+          <svg class="link-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+        <a class="link-card" href="https://wa.me/525540916347?text=Hola%20Marte%2C%20te%20contacto%20desde%20tu%20tarjeta%20digital%20Axvisors." target="_blank" rel="noopener" aria-label="WhatsApp">
+          <span class="link-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></span>
+          <div class="link-card-body">
+            <div class="link-card-label">WhatsApp</div>
+            <div class="link-card-value">Iniciar conversación</div>
+          </div>
+          <svg class="link-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="sec-social-wrap" aria-labelledby="sec-social">
+      <p class="section-label">Conexión</p>
+      <h2 class="section-title" id="sec-social">Sígueme en <em>línea</em>.</h2>
+      <div class="socials">
+        <a class="social" href="" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 10H5.67v8h2.67v-8zm-1.34-4a1.54 1.54 0 0 0 0 3.07A1.54 1.54 0 0 0 7 6zm11.34 8.74c0-2.56-1.63-3.47-3.13-3.47-.98 0-1.81.41-2.21 1.13V10h-2.67v8h2.67v-4.26c0-.97.45-1.57 1.29-1.57.77 0 1.38.54 1.38 1.57V18h2.67v-3.26z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="social" href="" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a class="social" href="" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a class="social" href="https://www.axvisors.com" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>axvisors.com</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sec-location">
+      <p class="section-label">Oficina</p>
+      <h2 class="section-title" id="sec-location">Visita nuestras <em>oficinas</em>.</h2>
+      <div class="location-card">
+        <div class="location-office">Lomas de Chapultepec</div>
+        <p class="location-address">
+          <strong>Axvisors · Ciudad de México</strong>
+          Montes Urales 360, Lomas - Virreyes<br />
+          Lomas de Chapultepec, CDMX<br />
+          C.P. 11000
+        </p>
+        <a class="btn-outline" href="https://maps.google.com/?q=Montes%20Urales%20360%2C%20Lomas%20-%20Virreyes%2C%20Lomas%20de%20Chapultepec%2C%20CDMX%2C%2011000" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cómo llegar
+        </a>
+      </div>
+    </section>
+
+    <section class="share-section" aria-labelledby="sec-share">
+      <h3 id="sec-share">Comparte esta <em>tarjeta</em>.</h3>
+      <button class="share-btn" id="shareBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        <span>Compartir perfil</span>
+      </button>
+    </section>
+
+    <footer class="footer">
+      <img src="assets/axvisors-logo-white.png" alt="Axvisors" class="footer-logo" />
+      <a class="footer-web" href="https://www.axvisors.com" target="_blank" rel="noopener">www.axvisors.com</a>
+      <div class="footer-meta">© <span id="year">2026</span> Axvisors · Real Estate Services</div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">✓</div>
+
+  <script>
+    const PROFILE = {
+      nombre:    "Marte",
+      apellido:  "Gómez",
+      puesto:    "Business Development",
+      empresa:   "Axvisors",
+      email:     "marte.gomez@axvisors.com",
+      telefono:  "+525540916347",
+      direccion: "Montes Urales 360, Lomas - Virreyes",
+      ciudad:    "Lomas de Chapultepec",
+      estado:    "CDMX",
+      cp:        "11000",
+      pais:      "México",
+      web:       "https://www.axvisors.com",
+      linkedin:  "",
+      url:       window.location.href
+    };
+
+    document.getElementById('saveContactBtn').addEventListener('click', () => {
+      const lines = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        `N:${PROFILE.apellido};${PROFILE.nombre};;;`,
+        `FN:${PROFILE.nombre} ${PROFILE.apellido}`,
+        `ORG:${PROFILE.empresa}`,
+        `TITLE:${PROFILE.puesto}`,
+        `TEL;TYPE=CELL,VOICE:${PROFILE.telefono}`,
+        `EMAIL;TYPE=WORK:${PROFILE.email}`,
+        `ADR;TYPE=WORK:;;${PROFILE.direccion};${PROFILE.ciudad};${PROFILE.estado};${PROFILE.cp};${PROFILE.pais}`,
+        `URL:${PROFILE.web}`
+      ];
+      if (PROFILE.linkedin && PROFILE.linkedin !== "#" && PROFILE.linkedin !== "")
+        lines.push(`URL;TYPE=LinkedIn:${PROFILE.linkedin}`);
+      lines.push("END:VCARD");
+
+      const blob = new Blob([lines.join("\r\n")], { type: "text/vcard;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${PROFILE.nombre}_${PROFILE.apellido}_Axvisors.vcf`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      showToast("✓ Contacto descargado");
+    });
+
+    document.getElementById('shareBtn').addEventListener('click', async () => {
+      const title = `${PROFILE.nombre} ${PROFILE.apellido} · Axvisors`;
+      const text  = `${PROFILE.nombre} ${PROFILE.apellido} — ${PROFILE.puesto} en Axvisors Real Estate Services.`;
+      if (navigator.share) {
+        try { await navigator.share({ title, text, url: PROFILE.url }); } catch (e) {}
+      } else {
+        try {
+          await navigator.clipboard.writeText(PROFILE.url);
+          showToast("✓ Enlace copiado");
+        } catch (e) { showToast("No se pudo copiar"); }
+      }
+    });
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('visible');
+      clearTimeout(t._timer);
+      t._timer = setTimeout(() => t.classList.remove('visible'), 2600);
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function hideEmpty() {
+      document.querySelectorAll('.social, .link-card, .resource-card').forEach(a => {
+        const h = (a.getAttribute('href') || '').trim();
+        if (h === '' || h === '#') a.style.display = 'none';
+      });
+      ['sec-social-wrap','sec-resources-wrap'].forEach(id => {
+        const sec = document.getElementById(id);
+        if (!sec) return;
+        const container = sec.querySelector('.socials, .link-list, .resource-card');
+        if (!container) return;
+        if (container.classList.contains('resource-card') && container.style.display === 'none') {
+          sec.style.display = 'none'; return;
+        }
+        if (container.children) {
+          const visible = Array.from(container.children).filter(c => c.style.display !== 'none');
+          if (visible.length === 0) sec.style.display = 'none';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
